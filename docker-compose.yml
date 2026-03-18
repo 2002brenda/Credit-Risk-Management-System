@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: creditrisk-sql
+    environment:
+      SA_PASSWORD: "YourStrong!Pass123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+
+  backend:
+    build: ./backend
+    container_name: creditrisk-api
+    ports:
+      - "5292:8080"
+    depends_on:
+      - sqlserver
+
+  frontend:
+    build: ./frontend
+    container_name: creditrisk-ui
+    ports:
+      - "5173:5173"
