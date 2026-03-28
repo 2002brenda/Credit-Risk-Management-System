@@ -33,6 +33,13 @@ namespace CreditRiskManagementSystem.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
+                    b.Property<int>("CbPersonCredHistLength")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CbPersonDefaultOnFile")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
@@ -49,6 +56,31 @@ namespace CreditRiskManagementSystem.Migrations
                     b.Property<decimal>("LoanAmount")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("LoanGrade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LoanIntent")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PersonAge")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PersonEmpLength")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PersonHomeOwnership")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RiskGrade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RiskScore")
+                        .HasColumnType("int");
 
                     b.Property<string>("Status")
                         .IsRequired()

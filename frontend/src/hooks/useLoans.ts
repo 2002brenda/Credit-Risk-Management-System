@@ -1,6 +1,14 @@
 import { useQuery } from "@tanstack/react-query"
 import { getLoans } from "../api/loanApi"
 import type { LoanApplication } from "../types"
+import { getSummary } from "../api/loanApi"
+
+export const useSummary = () => {
+  return useQuery({
+    queryKey: ["summary"],
+    queryFn: getSummary
+  })
+}
 
 export const useLoans = () => {
   return useQuery({
