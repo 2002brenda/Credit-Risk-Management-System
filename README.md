@@ -11,12 +11,6 @@ A comprehensive **Credit Risk Management System** that leverages Machine Learnin
 
 ---
 
-## 🚀 Live Demo
-
-> Coming Soon!
-
----
-
 ## 📊 Features
 
 ### 🤖 AI-Powered Risk Assessment
