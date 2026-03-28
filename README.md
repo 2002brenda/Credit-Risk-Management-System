@@ -1,6 +1,4 @@
-## 📁 README.md
 
-```markdown
 # 🏦 Credit Risk Management System
 
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=.net)](https://dotnet.microsoft.com/)
