@@ -228,6 +228,4 @@ logs/
 *.ldf
 ```
 
----
 
-Simpan file `README.md` di **root folder** project, dan `.gitignore` juga di root folder. 🚀
