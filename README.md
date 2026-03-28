@@ -112,7 +112,7 @@ CreditRiskManagementSystem/
 
 #### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/credit-risk-management.git
+git clone
 cd credit-risk-management
 ```
 
